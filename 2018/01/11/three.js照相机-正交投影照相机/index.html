@@ -5,27 +5,28 @@
   
 
   
-  <title>three.js照相机-正交投影照相机 | Hexo</title>
+  <title>three.js照相机-正交投影照相机 | Zhhuan&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="three.js 中照相机是一个必不可少的元素，想象一个场景，照相机就像一个人的眼睛，屏幕中呈现的场景就是照相机看到的场景。接下来细细说下three.js中照相机怎么来使用。 照相机的作用Three.js创建的场景是三维的，而显示屏是二维的，三维需要投影到二维平面上。照相机定义了三维空间到二维屏幕的投影方式，根据投影方式的不用，照相机又分为正交投影照相机与透视投影照相机。 正交投影照相机构造函数解">
 <meta name="keywords" content="three.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="three.js照相机-正交投影照相机">
-<meta property="og:url" content="http://yoursite.com/2018/01/11/three.js照相机-正交投影照相机/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="https://zhhuan.github.io/2018/01/11/three.js照相机-正交投影照相机/index.html">
+<meta property="og:site_name" content="Zhhuan&#39;s blog">
 <meta property="og:description" content="three.js 中照相机是一个必不可少的元素，想象一个场景，照相机就像一个人的眼睛，屏幕中呈现的场景就是照相机看到的场景。接下来细细说下three.js中照相机怎么来使用。 照相机的作用Three.js创建的场景是三维的，而显示屏是二维的，三维需要投影到二维平面上。照相机定义了三维空间到二维屏幕的投影方式，根据投影方式的不用，照相机又分为正交投影照相机与透视投影照相机。 正交投影照相机构造函数解">
-<meta property="og:image" content="http://yoursite.com/2018/01/11/upload_image/OrthographicCamera.png">
-<meta property="og:image" content="http://yoursite.com/2018/01/11/upload_image/OrthographicCamera2.png">
-<meta property="og:image" content="http://yoursite.com/2018/01/11/upload_image/OrthographicCamera3.png">
-<meta property="og:image" content="http://yoursite.com/2018/01/11/upload_image/OrthographicCamera3.png">
-<meta property="og:image" content="http://yoursite.com/2018/01/11/upload_image/OrthographicCamera4.png">
-<meta property="og:updated_time" content="2018-01-11T14:07:40.678Z">
+<meta property="og:locale" content="zh">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/11/upload_image/OrthographicCamera.png">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/11/upload_image/OrthographicCamera2.png">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/11/upload_image/OrthographicCamera3.png">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/11/upload_image/OrthographicCamera3.png">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/11/upload_image/OrthographicCamera4.png">
+<meta property="og:updated_time" content="2018-01-11T14:46:58.503Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="three.js照相机-正交投影照相机">
 <meta name="twitter:description" content="three.js 中照相机是一个必不可少的元素，想象一个场景，照相机就像一个人的眼睛，屏幕中呈现的场景就是照相机看到的场景。接下来细细说下three.js中照相机怎么来使用。 照相机的作用Three.js创建的场景是三维的，而显示屏是二维的，三维需要投影到二维平面上。照相机定义了三维空间到二维屏幕的投影方式，根据投影方式的不用，照相机又分为正交投影照相机与透视投影照相机。 正交投影照相机构造函数解">
-<meta name="twitter:image" content="http://yoursite.com/2018/01/11/upload_image/OrthographicCamera.png">
+<meta name="twitter:image" content="https://zhhuan.github.io/2018/01/11/upload_image/OrthographicCamera.png">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Zhhuan&#39;s blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -44,7 +45,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Zhhuan&#39;s blog</a>
       </h1>
       
     </div>
@@ -61,10 +62,10 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhhuan.github.io"></form>
       </div>
     </div>
   </div>
@@ -76,6 +77,10 @@
   <time datetime="2018-01-11T02:04:51.000Z" itemprop="datePublished">2018-01-11</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端技术/">前端技术</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -130,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/11/three.js照相机-正交投影照相机/" data-id="cjcakrfrr0001skw3hvdozufg" class="article-share-link">Teilen</a>
+      <a data-url="https://zhhuan.github.io/2018/01/11/three.js照相机-正交投影照相机/" data-id="cjcaly7nw0001tkw3c9gvhwl1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/three-js/">three.js</a></li></ul>
@@ -143,7 +148,7 @@
   
   
     <a href="/2018/01/10/Hexo博客搭建/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hexo博客搭建</div>
     </a>
   
@@ -157,13 +162,20 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端技术/">前端技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/攻城利器/">攻城利器</a></li></ul>
+    </div>
+  </div>
+
 
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/three-js/">three.js</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/three-js/">three.js</a></li></ul>
     </div>
   </div>
 
@@ -173,14 +185,14 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/three-js/" style="font-size: 10px;">three.js</a>
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/three-js/" style="font-size: 10px;">three.js</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
     </div>
@@ -190,7 +202,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -214,7 +226,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2018 John Doe<br>
+      &copy; 2018 zhhuan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
