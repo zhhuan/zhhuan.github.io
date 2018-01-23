@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="three.js," />
 
 
 
@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="很久以来就想自己搭个博客写文章，记录编程路上成长的过程。没想到一直拖到毕业半年后才完成，还是托管到github上的静态网站。古人说得好，凡事预则立，不预则废，计划了这么久，最后能执行就行。接下来就详细说下用Hexo搭建博客并托管到github上的整个操作。 准备工作 下载node.js并安装  安装git  安装hexo。方法：新建blog文件夹，在该目录下运行npm install hexo-c">
-<meta name="keywords" content="hexo">
+<meta name="description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far) 透视照相机投影图 透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。 fov是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。fov越大，视景体变大，显示物体相对于整个视景体大小变小。 aspect等于width / height，是照相机水平方向和竖直">
+<meta name="keywords" content="three.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客搭建">
-<meta property="og:url" content="https://zhhuan.github.io/2018/01/10/Hexo博客搭建/index.html">
+<meta property="og:title" content="three.js照相机-透视投影照相机">
+<meta property="og:url" content="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/index.html">
 <meta property="og:site_name" content="Zhhuan&#39;s blog">
-<meta property="og:description" content="很久以来就想自己搭个博客写文章，记录编程路上成长的过程。没想到一直拖到毕业半年后才完成，还是托管到github上的静态网站。古人说得好，凡事预则立，不预则废，计划了这么久，最后能执行就行。接下来就详细说下用Hexo搭建博客并托管到github上的整个操作。 准备工作 下载node.js并安装  安装git  安装hexo。方法：新建blog文件夹，在该目录下运行npm install hexo-c">
+<meta property="og:description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far) 透视照相机投影图 透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。 fov是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。fov越大，视景体变大，显示物体相对于整个视景体大小变小。 aspect等于width / height，是照相机水平方向和竖直">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-11T15:21:19.945Z">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/23/upload_image/PerspectiveCamera.png">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/23/upload_image/PerspectiveCamera1.png">
+<meta property="og:updated_time" content="2018-01-23T02:07:21.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客搭建">
-<meta name="twitter:description" content="很久以来就想自己搭个博客写文章，记录编程路上成长的过程。没想到一直拖到毕业半年后才完成，还是托管到github上的静态网站。古人说得好，凡事预则立，不预则废，计划了这么久，最后能执行就行。接下来就详细说下用Hexo搭建博客并托管到github上的整个操作。 准备工作 下载node.js并安装  安装git  安装hexo。方法：新建blog文件夹，在该目录下运行npm install hexo-c">
+<meta name="twitter:title" content="three.js照相机-透视投影照相机">
+<meta name="twitter:description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far) 透视照相机投影图 透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。 fov是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。fov越大，视景体变大，显示物体相对于整个视景体大小变小。 aspect等于width / height，是照相机水平方向和竖直">
+<meta name="twitter:image" content="https://zhhuan.github.io/2018/01/23/upload_image/PerspectiveCamera.png">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://zhhuan.github.io/2018/01/10/Hexo博客搭建/"/>
+  <link rel="canonical" href="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/"/>
 
 
 
 
 
-  <title>Hexo博客搭建 | Zhhuan's blog</title>
+  <title>three.js照相机-透视投影照相机 | Zhhuan's blog</title>
   
 
 
@@ -263,7 +266,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhhuan.github.io/2018/01/10/Hexo博客搭建/">
+    <link itemprop="mainEntityOfPage" href="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhhuan">
@@ -280,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo博客搭建</h1>
+          <h1 class="post-title" itemprop="name headline">three.js照相机-透视投影照相机</h1>
         
 
         <div class="post-meta">
@@ -292,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-10T21:14:36+08:00">
-                2018-01-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-23T09:20:35+08:00">
+                2018-01-23
               </time>
             
 
@@ -315,8 +318,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/攻城利器/" itemprop="url" rel="index">
-                    <span itemprop="name">攻城利器</span>
+                  <a href="/categories/前端技术/" itemprop="url" rel="index">
+                    <span itemprop="name">前端技术</span>
                   </a>
                 </span>
 
@@ -352,69 +355,20 @@
       
 
       
-        <p>很久以来就想自己搭个博客写文章，记录编程路上成长的过程。没想到一直拖到毕业半年后才完成，还是托管到github上的静态网站。古人说得好，凡事预则立，不预则废，计划了这么久，最后能执行就行。接下来就详细说下用Hexo搭建博客并托管到github上的整个操作。</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
-<li><p>下载<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js</a>并安装</p>
-</li>
-<li><p>安装git</p>
-</li>
-<li><p>安装hexo。方法：新建<code>blog</code>文件夹，在该目录下运行<code>npm install hexo-cli -g</code></p>
-</li>
-</ol>
-<h3 id="本地搭建博客"><a href="#本地搭建博客" class="headerlink" title="本地搭建博客"></a>本地搭建博客</h3><ol>
-<li><p>进入<code>blog</code>目录，运行<code>hexo init</code>（初始化博客，生成hexo模板）</p>
-</li>
-<li><p><code>npm install</code>，安装需要的包</p>
-</li>
-<li><p><code>hexo server</code>（默认监听4000端口，访问<a href="localhost:4000" target="_blank" rel="noopener">localhost:4000</a>查看博客）</p>
-</li>
-</ol>
-<h3 id="用Github托管博客"><a href="#用Github托管博客" class="headerlink" title="用Github托管博客"></a>用Github托管博客</h3><ol>
-<li><p>在Github创建<code>xxx.github.io</code>的项目，<strong>xxx</strong>为github用户名</p>
-</li>
-<li><p>打开<code>blog</code>文件夹内的<code>_config.yml</code>配置文件，最后部分按如下设置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:zhhuan/zhhuan.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行<code>npm install hexo-deployer-git --save</code></p>
-</li>
-<li><p>运行<code>hexo g</code>（本地生成静态文件，<strong>public</strong>目录）</p>
-</li>
-<li><p>运行<code>hexo d</code>（将静态文件推送到Github）</p>
-</li>
-</ol>
-<p>打开浏览器，访问<code>https://xxx.github.io</code></p>
-<h3 id="Hexo常用操作"><a href="#Hexo常用操作" class="headerlink" title="Hexo常用操作"></a>Hexo常用操作</h3><h4 id="更新文章"><a href="#更新文章" class="headerlink" title="更新文章"></a>更新文章</h4><ol>
-<li><p>在<code>blog</code>目录下运行<code>hexo new &quot;article title&quot;</code>，会在_post文件夹中生成一个md文件</p>
-</li>
-<li><p>编辑正文内容（MakeDown）</p>
-</li>
-<li><p>修改起始字段</p>
-<ul>
-<li>title 文章的标题</li>
-<li>date 创建日期 （文件的创建日期 ）</li>
-<li>updated 修改日期 （ 文件的修改日期）</li>
-<li>comments 是否开启评论 true</li>
-<li>tags 标签</li>
-<li>categories 分类</li>
-<li>permalink url中的名字（文件名）</li>
-</ul>
-</li>
-<li><p><code>hexo clean</code>删除本地静态文件（public文件夹）</p>
-</li>
-<li><p><code>hexo g</code>生成静态文件</p>
-</li>
-<li><p><code>hexo d</code>推送</p>
-</li>
-</ol>
-<h4 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h4><p>Hexo 中有很多主题，可以在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>查看。 这里使用<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">hexo-theme-next</a>，下面列举更换主题的一般步骤：</p>
-<h5 id="1-下载主题资源"><a href="#1-下载主题资源" class="headerlink" title="1.下载主题资源"></a>1.下载主题资源</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<h5 id="2-应用下载的主题"><a href="#2-应用下载的主题" class="headerlink" title="2.应用下载的主题"></a>2.应用下载的主题</h5><p>在网站配置文件<code>_config.yml</code>中，配置<code>theme</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>next是主题名称，具体的可查看主题的文档</p>
-</blockquote>
-<h5 id="3-主题其他配置"><a href="#3-主题其他配置" class="headerlink" title="3.主题其他配置"></a>3.主题其他配置</h5><p>可在<code>/theme/{theme}/_config.yml</code>主题的配置文件下进行主题的配置。</p>
-<h5 id="4-查看效果"><a href="#4-查看效果" class="headerlink" title="4.查看效果"></a>4.查看效果</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+        <h3 id="透视投影照相机"><a href="#透视投影照相机" class="headerlink" title="透视投影照相机"></a>透视投影照相机</h3><h4 id="构造函数解释"><a href="#构造函数解释" class="headerlink" title="构造函数解释"></a>构造函数解释</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">THREE.PerspectiveCamera(fov, aspect, near, far)</span><br></pre></td></tr></table></figure>
+<h5 id="透视照相机投影图"><a href="#透视照相机投影图" class="headerlink" title="透视照相机投影图"></a>透视照相机投影图</h5><p><img src="../upload_image/PerspectiveCamera.png"></p>
+<p>透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。</p>
+<p><code>fov</code>是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。<code>fov</code>越大，视景体变大，显示物体相对于整个视景体大小变小。</p>
+<p><code>aspect</code>等于<code>width / height</code>，是照相机水平方向和竖直方向长度的比值，通常设为Canvas的横纵比例。</p>
+<p><code>near</code>和<code>far</code>分别是照相机到视景体最近、最远的距离，均为正值，且<code>far</code>应大于<code>near</code>。</p>
+<h4 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h4><p>下面，我们通过一个例子来学习透视投影照相机。</p>
+<h5 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h5><p>设置照相机，Canvas长<code>400px</code>，宽<code>300px</code>，所以aspect设为<code>400 / 300</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let camera = new THREE.PerspectiveCamera(45,400/300,1,10);</span><br><span class="line">camera.position.set(0,0,5);</span><br></pre></td></tr></table></figure>
+<p>设置一个在原点处的边长为1的正方体：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// a cube in the scene</span><br><span class="line">let geometry = new THREE.CubeGeometry(1, 1, 1);</span><br><span class="line">let material = new THREE.MeshBasicMaterial(&#123;</span><br><span class="line">    color: 0xff0000,</span><br><span class="line">    wireframe: true</span><br><span class="line"> &#125;);</span><br><span class="line">let cube = new THREE.Mesh(geometry,material);</span><br><span class="line">scene.add(cube);</span><br></pre></td></tr></table></figure>
+<p>得到效果：</p>
+<p><img src="../upload_image/PerspectiveCamera1.png" height="50%" width="50%"></p>
+<p>透视投影可以看到全部的12条边，而且有近大远小的效果，这也就是与正交投影的区别。</p>
 
       
     </div>
@@ -432,7 +386,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/three-js/" rel="tag"># three.js</a>
           
         </div>
       
@@ -445,15 +399,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/11/three.js照相机-正交投影照相机/" rel="next" title="three.js照相机-正交投影照相机">
+                <i class="fa fa-chevron-left"></i> three.js照相机-正交投影照相机
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/11/three.js照相机-正交投影照相机/" rel="prev" title="three.js照相机-正交投影照相机">
-                three.js照相机-正交投影照相机 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -585,7 +539,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地搭建博客"><span class="nav-number">2.</span> <span class="nav-text">本地搭建博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用Github托管博客"><span class="nav-number">3.</span> <span class="nav-text">用Github托管博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo常用操作"><span class="nav-number">4.</span> <span class="nav-text">Hexo常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#更新文章"><span class="nav-number">4.1.</span> <span class="nav-text">更新文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更换主题"><span class="nav-number">4.2.</span> <span class="nav-text">更换主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-下载主题资源"><span class="nav-number">4.2.1.</span> <span class="nav-text">1.下载主题资源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-应用下载的主题"><span class="nav-number">4.2.2.</span> <span class="nav-text">2.应用下载的主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-主题其他配置"><span class="nav-number">4.2.3.</span> <span class="nav-text">3.主题其他配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-查看效果"><span class="nav-number">4.2.4.</span> <span class="nav-text">4.查看效果</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#透视投影照相机"><span class="nav-number">1.</span> <span class="nav-text">透视投影照相机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数解释"><span class="nav-number">1.1.</span> <span class="nav-text">构造函数解释</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#透视照相机投影图"><span class="nav-number">1.1.1.</span> <span class="nav-text">透视照相机投影图</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实例说明"><span class="nav-number">1.2.</span> <span class="nav-text">实例说明</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本设置"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本设置</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
