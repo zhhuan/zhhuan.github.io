@@ -79,21 +79,21 @@
 
 
 
-<meta name="description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far) 透视照相机投影图 透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。 fov是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。fov越大，视景体变大，显示物体相对于整个视景体大小变小。 aspect等于width / height，是照相机水平方向和竖直">
+<meta name="description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far)">
 <meta name="keywords" content="three.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="three.js照相机-透视投影照相机">
 <meta property="og:url" content="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/index.html">
 <meta property="og:site_name" content="Zhhuan&#39;s blog">
-<meta property="og:description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far) 透视照相机投影图 透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。 fov是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。fov越大，视景体变大，显示物体相对于整个视景体大小变小。 aspect等于width / height，是照相机水平方向和竖直">
+<meta property="og:description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://zhhuan.github.io/2018/01/23/upload_image/PerspectiveCamera.png">
-<meta property="og:image" content="https://zhhuan.github.io/2018/01/23/upload_image/PerspectiveCamera1.png">
-<meta property="og:updated_time" content="2018-01-23T02:07:21.892Z">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/PerspectiveCamera.png">
+<meta property="og:image" content="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/PerspectiveCamera1.png">
+<meta property="og:updated_time" content="2018-01-23T03:57:39.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="three.js照相机-透视投影照相机">
-<meta name="twitter:description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far) 透视照相机投影图 透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。 fov是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。fov越大，视景体变大，显示物体相对于整个视景体大小变小。 aspect等于width / height，是照相机水平方向和竖直">
-<meta name="twitter:image" content="https://zhhuan.github.io/2018/01/23/upload_image/PerspectiveCamera.png">
+<meta name="twitter:description" content="透视投影照相机构造函数解释1THREE.PerspectiveCamera(fov, aspect, near, far)">
+<meta name="twitter:image" content="https://zhhuan.github.io/2018/01/23/three.js照相机-透视投影照相机/PerspectiveCamera.png">
 
 
 
@@ -103,7 +103,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -148,7 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -190,16 +190,6 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
           </a>
         </li>
       
@@ -356,7 +346,8 @@
 
       
         <h3 id="透视投影照相机"><a href="#透视投影照相机" class="headerlink" title="透视投影照相机"></a>透视投影照相机</h3><h4 id="构造函数解释"><a href="#构造函数解释" class="headerlink" title="构造函数解释"></a>构造函数解释</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">THREE.PerspectiveCamera(fov, aspect, near, far)</span><br></pre></td></tr></table></figure>
-<h5 id="透视照相机投影图"><a href="#透视照相机投影图" class="headerlink" title="透视照相机投影图"></a>透视照相机投影图</h5><p><img src="../upload_image/PerspectiveCamera.png"></p>
+<a id="more"></a>
+<h5 id="透视照相机投影图"><a href="#透视照相机投影图" class="headerlink" title="透视照相机投影图"></a>透视照相机投影图</h5><p><img src="PerspectiveCamera.png"></p>
 <p>透视图中，灰色的部分是视景体，是可能被渲染的物体所在的区域。</p>
 <p><code>fov</code>是视景体竖直方向上的张角（是角度制而非弧度制），如侧视图所示。<code>fov</code>越大，视景体变大，显示物体相对于整个视景体大小变小。</p>
 <p><code>aspect</code>等于<code>width / height</code>，是照相机水平方向和竖直方向长度的比值，通常设为Canvas的横纵比例。</p>
@@ -367,7 +358,7 @@
 <p>设置一个在原点处的边长为1的正方体：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// a cube in the scene</span><br><span class="line">let geometry = new THREE.CubeGeometry(1, 1, 1);</span><br><span class="line">let material = new THREE.MeshBasicMaterial(&#123;</span><br><span class="line">    color: 0xff0000,</span><br><span class="line">    wireframe: true</span><br><span class="line"> &#125;);</span><br><span class="line">let cube = new THREE.Mesh(geometry,material);</span><br><span class="line">scene.add(cube);</span><br></pre></td></tr></table></figure>
 <p>得到效果：</p>
-<p><img src="../upload_image/PerspectiveCamera1.png" height="50%" width="50%"></p>
+<p><img src="PerspectiveCamera1.png" height="50%" width="50%"></p>
 <p>透视投影可以看到全部的12条边，而且有近大远小的效果，这也就是与正交投影的区别。</p>
 
       
@@ -494,10 +485,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -505,10 +496,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
